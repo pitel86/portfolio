@@ -1,0 +1,33 @@
+header {
+    background-color: $purpleColor;
+    text-align: center;
+    padding: 20px 0;
+
+    .navbar {
+      padding: 10px;
+      width: 100%;
+      top: 0;
+  
+      &__menu {
+        @include flexElement(row, space-around, center);
+        
+        &--item {
+          font-size: 16px;
+          padding: 5px;
+          text-transform: uppercase;
+          a {
+            color: $orangeColor;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+  
+            &:hover {
+              color: $lightBlueFont;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  
